@@ -22,7 +22,7 @@ app=Flask(__name__)
 # In[4]:
 
 
-@app.route("/",methods=["GET","PEST"])
+@app.route("/",methods=["GET","POST"])
 def index():
     if request.method=="POST":
         rates=request.form.get("rates")
